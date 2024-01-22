@@ -1,0 +1,42 @@
+.calculation-columns {
+  display: grid;
+  grid-template-rows: 3fr 2fr 2fr 1fr 1fr;
+  margin-left: 10px;
+}
+
+.system-information th,
+.system-information td {
+    border: none #ddd; /* Add border to all cells */
+    padding: 0px; /* Optional: Add padding for cell content */
+    font-weight: normal;
+    font-size: 11px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.system-information tr {
+    border-bottom: 1px solid black; /* Add border below each row */
+}
+
+.system-information input {
+    border: 1px solid #b1b1b1; /* Add border to all input fields */
+    padding: 6px;
+    margin-right: 2px; /* Optional: Add padding for input fields */
+    box-sizing: border-box; /* Optional: Include padding and border in the element's total width and height */
+}
+
+.system-information td {
+    padding-right: 5px; /* Add horizontal padding between cells */
+}
+.system-information th[colspan="9"] {
+    height: 30px; /* Set the desired height for the first heading row */
+    font-size: 15px;
+        background-color: rgb(172, 217, 253);
+}
+
+.system-information input::placeholder {
+    color: #5e5d5d; /* Set the color for the placeholder text */
+    font-weight: bold; /* Add italic style to the placeholder text */
+    /* Add any other styling properties as needed */
+}
+

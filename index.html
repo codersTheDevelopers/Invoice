@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html2Pdf</title>
+    <link rel="stylesheet" href="html2pdf.css" />
+    <link rel="stylesheet" href="paymentForm.css" />
+    <link rel="stylesheet" href="calculations_column.css" />
+    <link rel="stylesheet" href="usage_table.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+      integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <button onclick="save()">Download</button>
+    <div class="page-body">
+      <div class="header">
+        <img class="banner-image" src="banner.png" alt="" />
+        <div class="header-links">
+          <p>18528 Pioneer Blvd. 205, Artesia, CA 90701</p>
+          <p>www.americandirectsolar.com</p>
+          <p>sales@americandirectsola</p>
+          <p>Office - 562 380 3800</p>
+          <p>Mobile - 562 805 8782</p>
+        </div>
+      </div>
+
+      <!-- **** Body starts here. Divided in to two sections below***-->
+      <div class="body-content">
+        <!-- **** Client form, first half of the body starts here ***-->
+        <div class="client-form">
+          <div class="client-form-first-row">
+            <div class="form-attribute-titles">Name of Sales Rep:</div>
+            <div class="first-row-other-half">
+              <input class="input-" type="text" />
+              <div class="form-attribute-titles invoice-date">Date:</div>
+              <input class="input-" type="date" />
+            </div>
+          </div>
+          <div class="client-form-second-row">
+            <div class="form-attribute-titles">Name of Customer:</div>
+            <input class="input-" type="text" />
+          </div>
+          <div class="client-form-third-row">
+            <div class="form-attribute-titles">Street Address:</div>
+            <input class="input-" type="text" />
+          </div>
+          <div class="client-form-fourth-row">
+            <div class="form-attribute-titles">City, State, Zipcode:</div>
+            <input class="input-" type="text" name="" id="" />
+          </div>
+          <div class="client-form-fifth-row">
+            <div class="form-attribute-titles">Phone Number:</div>
+            <input class="input-" type="text" />
+            <div class="form-attribute-titles client-email">Email</div>
+            <input class="input-" type="text" />
+          </div>
+        </div>
+        <!-- *************** User Form ends here*************** -->
+
+        <!-- *************** Below is the payment form divided into two vertical halfs *************** -->
+        <div class="payment-form">
+          <div class="payment-grid">
+            <div class="usage-column">
+              <table class="monthly-usage-table">
+                <tr style="background-color: rgb(172, 217, 253)">
+                  <th style="width: 14%">Month</th>
+                  <th style="width: 43%">Usage</th>
+                  <th style="width: 43%">Cost</th>
+                </tr>
+                <tr>
+                  <td>1.</td>
+                  <td><input class="input-usage" type="text" /></td>
+                  <td><input class="input-cost" type="text" /></td>
+                </tr>
+                <tr>
+                  <td>2.</td>
+                  <td><input class="input-usage" type="text" /></td>
+                  <td><input class="input-cost" type="text" /></td>
+                </tr>
+                <tr>
+                  <td>3.</td>
+                  <td><input class="input-usage" type="text" /></td>
+                  <td><input class="input-cost" type="text" /></td>
+                </tr>
+                <tr>
+                  <td>4.</td>
+                  <td><input class="input-usage" type="text" /></td>
+                  <td><input class="input-cost" type="text" /></td>
+                </tr>
+                <tr>
+                  <td>5.</td>
+                  <td><input class="input-usage" type="text" /></td>
+                  <td><input class="input-cost" type="text" /></td>
+                </tr>
+                <tr>
+                  <td>6.</td>
+                  <td><input class="input-usage" type="text" /></td>
+                  <td><input class="input-cost" type="text" /></td>
+                </tr>
+                <tr>
+                  <td>7.</td>
+                  <td><input class="input-usage" type="text" /></td>
+                  <td><input class="input-cost" type="text" /></td>
+                </tr>
+                <tr>
+                  <td>8.</td>
+                  <td><input class="input-usage" type="text" /></td>
+                  <td><input class="input-cost" type="text" /></td>
+                </tr>
+                <tr>
+                  <td>9.</td>
+                  <td><input class="input-usage" type="text" /></td>
+                  <td><input class="input-cost" type="text" /></td>
+                </tr>
+                <tr>
+                  <td>10.</td>
+                  <td><input class="input-usage" type="text" /></td>
+                  <td><input class="input-cost" type="text" /></td>
+                </tr>
+                <tr>
+                  <td>11.</td>
+                  <td><input class="input-usage" type="text" /></td>
+                  <td><input class="input-cost" type="text" /></td>
+                </tr>
+                <tr>
+                  <td>12.</td>
+                  <td><input class="input-usage" type="text" /></td>
+                  <td><input class="input-cost" type="text" /></td>
+                </tr>
+                <tr>
+                  <td class="extra-usage-text">Extra Usage</td>
+                  <td><input class="input-usage" type="text" /></td>
+                  <td><input class="input-cost" type="text" /></td>
+                </tr>
+              </table>
+
+              <table class="usage-time-estimates">
+                <tr>
+                  <td style="width: 33%; background-color: rgb(172, 217, 253);">Yearly AVG KWH</td>
+                  <td style="width: 33%;" class="data-view">0.0</td>
+                  <td style="width: 33%;" class="data-view">$ 0.0</td>
+                </tr>
+                <tr>
+                  <td style=" background-color: rgb(172, 217, 253);">Monthly AVG KWH</td>
+                  <td class="data-view">0.0</td>
+                  <td class="data-view">$ 0.0</td>
+                </tr>
+                <tr>
+                  <td style=" background-color: rgb(172, 217, 253);">Per Day AVG KWH</td>
+                  <td class="data-view">0.0</td>
+                  <td class="data-view">$ 0.0</td>
+                </tr>
+              </table>
+              <div class="types">
+                <div class="roof-type">
+                  <div class="roof-type-title">Roof Type</div>
+                  <div class="root-categories">
+                    <input type="checkbox" class="checkbox" />
+                    <p>Spanish</p>
+                    <input type="checkbox" class="checkbox" />
+                    <p>CompShingle</p>
+                    <input type="checkbox" class="checkbox" />
+                    <p>CncrtFlatShake</p>
+                    <input type="checkbox" class="checkbox" />
+                    <p>Others</p>
+                  </div>
+                </div>
+                <div class="project-type">
+                  <div class="project-type-title">Project Type</div>
+                  <div class="project-categories">
+                    <input type="checkbox" class="checkbox" />
+                    <p>Spanish</p>
+                    <input type="checkbox" class="checkbox" />
+                    <p>CompShingle</p>
+                    <input type="checkbox" class="checkbox" />
+                    <p>CncrtFlatShake</p>
+                    <input type="checkbox" class="checkbox" />
+                    <p>Others</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="calculation-columns">
+              <table class="system-information">
+                <tr>
+                  <th colspan="9">System Information</th>
+                </tr>
+
+                <tr>
+                  <td>System Size</td>
+                  <td colspan="2"><input type="text" placeholder="0.0" /></td>
+                  <td>KW/P</td>
+                  <td colspan="2"><input type="text" placeholder="0.0" /></td>
+                </tr>
+                <tr>
+                  <td>Total Panels</td>
+                  <td><input type="text" /></td>
+                  <td>Added Panels</td>
+                  <td><input type="text" /></td>
+                  <td>Panel Watts</td>
+                  <td><input type="text" /></td>
+                </tr>
+                <tr>
+                  <td>Total Price</td>
+                  <td colspan="2"><input type="text" placeholder="$ 0.0" /></td>
+                  <td colspan="3"><input type="text" placeholder="$ 0.0" /></td>
+                </tr>
+                <tr>
+                  <td colspan="2">Tax Credit (%)</td>
+                  <td colspan="1"><input type="text" placeholder="30%" /></td>
+                  <td colspan="3"><input type="text" placeholder="$ 0.0" /></td>
+                </tr>
+                <tr>
+                  <td colspan="3">Total System Cost</td>
+                  <td colspan="3"><input type="text" placeholder="$ 0.0" /></td>
+                </tr>
+              </table>
+              <table class="usage-table">
+                <tr>
+                  <th colspan="2">Usage</th>
+                </tr>
+                <tr>
+                  <td>KWH Cost (Utility)</td>
+                  <td>$ 0.00</td>
+                </tr>
+                <tr>
+                  <td>KWH Cost (Solar)</td>
+                  <td>$ 0.00</td>
+                </tr>
+                <tr>
+                  <td>Net KWH Cost</td>
+                  <td>$ 0.00</td>
+                </tr>
+              </table>
+              <table class="payment-table">
+                <tr>
+                  <th colspan="2">Usage</th>
+                </tr>
+                <tr>
+                  <td>Monthly Elec Cost</td>
+                  <td>$ 0.00</td>
+                </tr>
+                <tr>
+                  <td>Monthly Solar Cost</td>
+                  <td>$ 0.00</td>
+                </tr>
+                <tr>
+                  <td>Total Yearly Saving</td>
+                  <td>$ 0.00</td>
+                </tr>
+              </table>
+
+              <div class="paydown-new">
+                <div class="paydown-new-title">
+                  Paydown 18 Months (Tax Credit)
+                </div>
+                <div class="paydown-new-first-row">
+                  <div
+                    class="first-half"
+                    style="
+                      flex: 2;
+                      border-style: solid;
+                      height: 100%;
+                      border-width: 0px 1px 0px 0px;
+                    "
+                  >
+                    <input type="text" />-
+                    <input type="text" />
+                  </div>
+                  <div style="flex: 1; text-align: center">$ 0.0</div>
+                </div>
+              </div>
+              <div class="paydown-new">
+                <div class="paydown-new-title">Without Paydown</div>
+                <div class="paydown-new-first-row">
+                  <div
+                    class="first-half"
+                    style="
+                      flex: 2;
+                      border-style: solid;
+                      height: 100%;
+                      border-width: 0px 1px 0px 0px;
+                    "
+                  >
+                    <input type="text" />-
+                    <input type="text" />
+                  </div>
+                  <div style="flex: 1; text-align: center">$ 0.0</div>
+                </div>
+              </div>
+              </table>
+            </div>
+          </div>
+          <div class="payment-note">
+            Note: Above Information is based upon rough Estimation
+          </div>
+        </div>
+        <!-- *************** Payment form ends here *************** -->
+      </div>
+      <!-- **** Body Ends here**-->
+
+      <!-- *************** This is the footer section *************** -->
+      <div class="footer">www.americandirectsolar.com</div>
+      <!-- *************** Footer section ends here *************** -->
+    </div>
+    
+
+    <script src="html2pdf.js"></script>
+  </body>
+</html>

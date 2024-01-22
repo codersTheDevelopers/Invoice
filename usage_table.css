@@ -1,0 +1,79 @@
+.usage-table,
+.payment-table,.paydown {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px;
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+}
+
+.usage-table th,
+.usage-table td,
+.payment-table th,
+.payment-table td,
+.paydown th,.paydown td{
+  border: 1px solid #070707;
+  padding: 8px;
+}
+
+.usage-table th,
+.payment-table th ,.paydown th{
+  background-color: rgb(172, 217, 253);
+}
+
+.usage-table td:nth-child(2),
+.payment-table td:nth-child(2) {
+  background-color: rgb(221, 228, 255);
+  font-weight: bold; /* Change the color to your desired value */
+}
+
+.paydown td:nth-child(9){
+  border: none;
+}
+
+.paydown-first-column{
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  margin: 0px;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  justify-content: center;
+}
+
+.paydown-first-column input{
+  width: 70px;
+  margin: 0px 5px;
+}
+
+
+.paydown-new{
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-width: 1px 1px 0px 1px;
+  margin-top: 5px;
+  font-size: 14px;
+}
+.paydown-new-title{
+  display: flex;
+  height: 40%;
+  justify-content: center;
+  align-items: center;background-color: rgb(172, 217, 253);
+}
+.paydown-new-first-row{
+  display: flex;
+  border-style: solid;
+  flex-direction: row;
+  border-width: 1px 0px 1px 0px;
+  height: 60%;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-half{
+  display: flex;
+  align-items: center;
+}

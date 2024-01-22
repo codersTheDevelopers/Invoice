@@ -1,0 +1,104 @@
+.payment-form {
+  display: grid;
+  grid-template-rows: 1fr 20px;
+}
+
+.payment-note {
+  display: flex;
+  flex-direction: column;
+  font-weight: normal;
+  color: rgb(39, 103, 241);
+  font-size: 14px;
+  height: 100%;
+  font-style: italic;
+  align-items: center;
+  letter-spacing: 5px;
+  justify-content: end;
+  padding-top: 6px;
+}
+
+.payment-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.usage-column {
+  display: Grid;
+  grid-template-rows: 4fr 1fr 100px;
+  margin-right: 0px;
+  text-align: center;
+}
+
+table,
+tr,
+td,
+th {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+input {
+  border: none;
+  background-color: rgb(221, 228, 255);
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+.extra-usage-text {
+  font-size: 14px;
+}
+
+.usage-time-estimates {
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 15px;
+  color: black;
+  font-weight: normal;
+}
+
+.data-view {
+  background-color: rgb(221, 228, 255);
+  font-weight: bold;
+}
+
+.types {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+
+  align-items: center;
+}
+
+.roof-type,
+.project-type {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  font-size: 14px;
+}
+.roof-type-title,
+.project-type-title {
+  display: flex;
+  border-style: solid;
+  border-width: 2px;
+  background-color: rgb(172, 217, 253);
+  padding: 0px 0px;
+  border-radius: 10px;
+  border-color: rgb(10, 32, 104);
+  font-weight: normal;
+  align-items: center;
+  justify-content: center;
+}
+
+.root-categories,
+.project-categories {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  justify-content: space-evenly;
+}
+.checkbox {
+  width: 22px;
+  height: 22px;
+  background-color: rgb(221, 228, 255);
+}
